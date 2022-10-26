@@ -1,0 +1,32 @@
+@media all and (max-width: 375px){
+   
+    .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav{
+        /*background-color: #fafafa;
+         border-radius: 10px;*/
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+            
+    }
+    li{
+        display: block;
+        text-align: left;
+        padding: 0.8rem 1rem;
+    }
+    li a{
+        font-size: 1.2rem;
+        color: #000000;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    hr{
+        display: block;
+        height: 1px;
+        color: #aeaeae;
+    }
+}
