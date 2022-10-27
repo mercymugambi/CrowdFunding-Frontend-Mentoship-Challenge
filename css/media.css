@@ -5,13 +5,13 @@
         align-items: flex-start;
     }
     nav{
-        /*background-color: #fafafa;
-         border-radius: 10px;*/
+        background-color: white;
+        border-radius: 10px;
         height: 0;
         width: 100%;
         overflow: hidden;
-            
-    }
+        }
+    
     li{
         display: block;
         text-align: left;
@@ -36,7 +36,6 @@
     }*/
     hr{
         display: block;
-        height: 1px;
-        color: #aeaeae;
+        color: #fafafafa;
     }
 }
