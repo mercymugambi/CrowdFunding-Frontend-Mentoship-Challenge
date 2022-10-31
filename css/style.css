@@ -1,6 +1,9 @@
 /* font-family: 'Commissioner', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
-
+@media all and (max-width: 1440px){
+body {
+    background-color: #fafafa;
+}
 header{
     background-image: url("/images/image-hero-desktop.jpg");
     background-size: cover;
@@ -55,28 +58,127 @@ li a{
 
 /*---Main Content section1--*/
 
-.mainContent{
+.content-section1{
     margin: auto;
-    margin-top: -40px;
+    margin-top: -80px;
     max-width: 800px;
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-direction: column;
-    background-color: #fafafa;
-    border: 1px solid #f5f5f5;
+    background-color: #ffffff;
+    border: 1px solid #fafafa;
 	padding: 1rem;
 	margin-bottom: 1.5rem;
 	border-radius: 0.5rem;
 }
-.mainContent .topIcon{
+
+
+.topIcon{
     display: flex;
     justify-content: center;
     z-index: 100;
     margin-top: -40px;
 }
-.mainContent-top h2{
+h1{
+    text-align: center;
     color: black;
-    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#mainContent-top p{
+    text-align: center;
+    color: #848484;
+}
+#bookmark_bottom {
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+/*-back project section -*/
+.mainContent-bottom{
+    padding-top: 35px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 
 }
+.backproject{
+    background-color: #39b5ab;
+    width: 30%;
+    border-radius: 40px;
+    padding: 7px 0;
+    margin-left: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    }
+.backproject:hover{
+    background-color: #226e68;
+    }
+/*--Bookmark--*/
+.bookmark-icon {
+    border-radius: 40px;
+	display: flex;
+	background-color: #f4f4f4;
+	font-weight: 700;
+    padding: 3px 0;
+    width: 24%;
+    color: #848484;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.bookmark-icon img{
+    background-color: #fafafa;
+    width: 100%;
+    border-radius: 100%;
+    padding-top: 8%;
+}
+#bookmark-text{
+    padding-top: 8%;
+    padding-left: 2%;
+}
+/*-------Section2---------*/
+.content-section2 {
+    margin: auto;
+    margin-top: 10px;
+    max-width: 800px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #fafafa;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+	border-radius: 0.5rem;
+}
+.fundStatus{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: normal;
+    padding-bottom: 10px;
+}
+.status {
+    border-bottom: none;
+    border-right: 1px solid;
+    width: calc(100% / 3);
+    padding-left: 2.5rem;
+}
+.status:nth-child(1) {
+    padding-left: 0;
+}
+
+.numericalText{
+    font-weight: 700;
+    font-size: 22px;
+}
+}
+
+
 
