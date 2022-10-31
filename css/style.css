@@ -3,6 +3,7 @@
 @media all and (max-width: 1440px){
 body {
     background-color: #fafafa;
+    
 }
 header{
     background-image: url("/images/image-hero-desktop.jpg");
@@ -162,13 +163,14 @@ h1{
     flex-direction: row;
     text-align: start;
     align-items: normal;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 .status {
     border-bottom: none;
     border-right: 1px solid;
     width: calc(100% / 3);
     padding-left: 2.5rem;
+    border-color: #848484;
 }
 .status:nth-child(1) {
     padding-left: 0;
@@ -177,6 +179,120 @@ h1{
 .numericalText{
     font-weight: 700;
     font-size: 22px;
+    text-align: center;
+}
+.status #paragraph{
+    color: #848484;
+    text-align: center;
+    font-size: 16px;
+}
+/*-----progress bar-----------*/
+progress {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 85%;
+	height: 1rem;
+	color: #39b5ab;
+	border-radius: 10px;
+    margin-left: 8%;
+}
+progress[value]::-webkit-progress-bar,
+progress[value] {
+	background-color: #eee;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+	background-color: #39b5ab;
+	border-radius: 10px;
+	transition: all 0.2s ease-out;
+}
+
+progress[value]::-moz-progress-bar {
+	background-color: #39b5ab;
+	border-radius: 10px;
+	transition: all 0.2s ease-out;
+}
+/*------project Details--------*/
+.headerDetails{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    line-height: 20px;
+    margin-left: 4%;
+}
+#project-details #paragraph{
+    color: #848484;
+    text-align: left;
+    font-size: 16px;
+    display: block;
+    margin-left: 4%;
+    margin-right: 4%;   
+}
+
+/*-----reward Section-----*/
+.content-section3{
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 32px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.pledgeHeader {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-between
+}
+.pledgeName {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 5px;
+}
+.pledgeAmount {
+    color: #39b5ab;
+    font-weight: 700;
+}
+.pledgeFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3px;
+}
+.StatusBigText {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 0.5rem;
+}
+
+.rewardBox {
+    background-color: #39b5ab;
+    width: 30%;
+    border-radius: 40px;
+    padding: 7px 0;
+    margin-left: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.rewardBox1 {
+    background-color: #848484;
+    width: 30%;
+    border-radius: 40px;
+    padding: 7px 0;
+    margin-left: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
 }
 }
 
