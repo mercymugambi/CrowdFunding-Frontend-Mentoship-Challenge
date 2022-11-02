@@ -1,3 +1,5 @@
+
+//hamburger
 const navToggle = document.querySelector('#navToggle');
 const nav = document.querySelector('nav');
 const navIcon = document.querySelectorAll('.navIcon');
@@ -20,4 +22,3 @@ window.addEventListener("resize", () =>{
     }
    
 })
-;

@@ -294,7 +294,293 @@ progress[value]::-moz-progress-bar {
     font-size: 20px;
     font-weight: 700;
 }
+/*------------modal----------------*/
+/* modal-styles */
+.Menu.hidden,
+.CloseMenu.hidden,
+.PledgeBoxForm.hidden {
+	display: none;
+}
+.Modal {
+	position: absolute;
+	z-index: 100;
+	background: white;
+	border-radius: 10px;
+	width: 85%;
+	max-width: 800px;
+	top: 10vh;
+	left: 50%;
+	transform: translate(-50%, 0);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	display: none;
+	overflow-y: initial;
+}
+.Modal.visible {
+	display: block;
+	animation: fade-slide-in 0.3s ease-out forwards;
+}
+@keyframes fade-slide-in {
+	0% {
+		transform: translate(-50%, -5rem);
+	}
+	100% {
+		transform: translate(-50%, 0);
+	}
+}
+@keyframes trans {
+	0% {
+		opacity: 0;
+		transform: translateY(-5rem);
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100%;
+		transform: translateY(0);
+	}
+}
+#menu_modal div {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 1rem;
+	font-weight: bold;
+	color: black;
+	padding: 1.5rem;
+}
+#gratitude {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+#gratitude div {
+	padding: 1rem;
+}
+#close_modal {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+}
+#project_detail {
+	font-size: 16px;
+	height: 80vh;
+	overflow-y: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+#project_detail::-webkit-scrollbar {
+	display: none;
+}
+.HeaderContainer {
+	display: flex;
+	flex-direction: column;
+}
+.PledgeBoxForm {
+	border-top: 1px solid #dbdbdb;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	animation: trans 0.3s ease-in forwards;
+}
+.PledgeBoxModal {
+	border: 1px solid #dbdbdb;
+	border-radius: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+.PledgeBoxModal:hover {
+	border: 2px solid #39b5ab;
+}
+.PledgeModalTop {
+	padding: 2rem 2rem 0;
+}
+.PledgeFormBottom {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1.5rem;
+}
+.PledgeInputBox {
+	border: 1px solid #dbdbdb;
+	padding: 1rem;
+	border-radius: 40px;
+	display: flex;
+	align-items: baseline;
+	width: 45%;
+	min-width: 100px;
+	max-width: 150px;
+	margin-right: 1rem;
+}
+.PledgeInputBox:hover {
+	border-color: #39b5ab;
+	cursor: pointer;
+}
+.PledgeInput {
+	border: none;
+	outline: none;
+	padding-left: 1rem;
+	color: black;
+	font-weight: 700;
+	font-size: 18px;
+	width: 5rem;
+}
+.PledgeFormText {
+	border-radius: 40px;
+	width: 50%;
+	min-width: 100px;
+	max-width: 180px;
+}
+.Borderline {
+	border: 2px solid #39b5ab;
+}
+button {
+	border: none;
+	border-radius: 40px;
+	background-color: #39b5ab;
+	color: #fff;
+	font-weight: 700;
+	width: 100%;
+	height: 100%;
+	font-size: 1rem;
+}
+.close-btn img:hover {
+	cursor: pointer;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
 }
 
+@media screen and (min-width: 700px) {
+	body {
+		background: url(/assets/images/image-hero-desktop.jpg);
+		background-color: #fafafa;
+		background-size: contain;
+		background-repeat: no-repeat;
+		font-size: 16px;
+	}
+	#right_bar {
+		display: flex;
+	}
+	.Menu {
+		display: none;
+	}
+	.CloseMenu {
+		display: none;
+	}
+	#menu_modal {
+		display: none;
+	}
+	#content_container {
+		margin-top: -15rem;
+	}
+	.BigText {
+		font-size: 28px;
+	}
+	.MajorContent {
+		padding: 3rem;
+	}
+	.BackProjectBox {
+		font-size: 1.2rem;
+	}
+	.RewardBox {
+		padding: 25px 0;
+		width: 100%;
+		max-width: 200px;
+	}
+	#bookmark_text {
+		display: block;
+		padding: 20px 30px 20px 10px;
+	}
+	#fund_status {
+		flex-direction: row;
+		text-align: start;
+		align-items: normal;
+	}
+	.StatusBox:nth-child(1) {
+		padding-left: 0;
+	}
+	.StatusBox {
+		border-bottom: none;
+		border-right: 1px solid;
+		width: calc(100% / 3);
+		padding-left: 2.5rem;
+	}
+	.StatusBigText {
+		font-size: 2rem;
+	}
+	.AboutHeader {
+		font-size: 1.5rem;
+		padding-bottom: 2rem;
+	}
+	.Checkbox {
+		margin-top: -5px;
+	}
+	.PledgeContainer {
+		align-items: center;
+	}
+	.PledgeBoxHeader {
+		flex-direction: row;
+		padding-bottom: 1rem;
+		width: 100%;
+		align-items: baseline;
+	}
+	.PledgeBoxFooter {
+		flex-direction: row;
+	}
+	.FooterMobile {
+		display: none;
+	}
+	.FooterDesktop {
+		display: block;
+		padding-bottom: 0;
+	}
+	.ModalText {
+		font-size: 1.2rem;
+	}
 
+
+    #backdrop {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 10;
+        pointer-events: none;
+        display: none;
+    }
+    #backdrop.visible {
+        display: block;
+        pointer-events: all;
+    }
+
+	/* modal styles */
+
+	.HeaderContainer {
+		flex-direction: row;
+	}
+
+	.PledgeBoxForm {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 2rem;
+	}
+	.PledgeFormBottom {
+		padding-top: unset;
+	}
+	.PledgeInputBox {
+		min-width: 130px;
+		max-width: 150px;
+	}
+	.PledgeFormText {
+		min-width: 160px;
+		max-width: 180px;
+	}}
+}
 
