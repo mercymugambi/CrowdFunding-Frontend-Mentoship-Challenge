@@ -20,5 +20,13 @@ window.addEventListener("resize", () =>{
         hamburger.classList.remove('hidden')
     
     }
-   
 })
+
+//Popup modals
+let popup = document.getElementById("popup");
+let blur = document.getElementById('blur');
+
+function openPopup() {
+    popup.classList.add("open-popup");
+    blur.classList.toggle('active'); 
+}

@@ -48,7 +48,7 @@
     </div>
   
     <div class="mainContent-bottom">
-      <div class="backproject">
+      <div class="backproject" class="backproject" onclick="openPopup()">
         <p>Back this project</p>
       </div>
       <div class="bookmark-icon">
@@ -61,7 +61,7 @@
   </div>
   
   <!--Section 2 Funds Status-->
-  <div class="content-section2">
+  <div class="content-section2" >
     <div class="fundStatus">
       <div class="status">
         <p class="numericalText" id="amount">$89,914</p>
@@ -82,95 +82,97 @@
         <progress id="meter-bar" max="100000" value="89914"></progress>
       </div>
   </div>
-  <div class="content-section2" id="project-details">
-    <div class="projectHeader">
-      <div class="headerDetails" id="header-details">
-        <p>About this project</p>
+  <div class="content-section2" >
+    <div id="project-details">
+      <div class="projectHeader">
+        <div class="headerDetails" id="header-details">
+          <p>About this project</p>
+        </div>
+        <div>
+          <p id="paragraph">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
+            to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
+            your posture and make you more comfortable while at work, helping you stay focused on the task at hand.</p>
+        </div>
+        <div>
+          <p id="paragraph"> Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
+            to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+        </div>
       </div>
-      <div>
-        <p id="paragraph">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
-          to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
-          your posture and make you more comfortable while at work, helping you stay focused on the task at hand.</p>
-      </div>
-      <div>
-        <p id="paragraph"> Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
-          to allow notepads, pens, and USB sticks to be stored under the stand.</p>
-      </div>
-    </div>
 
-    <!--Pledge Section $25+-->
-    <div class="content-section3" id="pledges">
-      <div class="pledgeHeader">
-        <div class="pledgeName select-reward">Bamboo Stand</div>
-        <div class="pledgeAmount">Pledge $25 or more</div>
-      </div>
-      <div class="pledgeText">
-        <p style="color: #848484;">
-          You get an ergonomic stand made of natural bamboo.
-          You've helped us launch our promotional campaign, and
-          you’ll be added to a special Backer member list.
-        </p>
-      </div>
-      <div class="pledgeFooter">
-        <div class="pledgeFooter">
+      <!--Pledge Section $25+-->
+      <div class="content-section3">
+        <div class="pledgeHeader">
+          <div class="pledgeName select-reward">Bamboo Stand</div>
+          <div class="pledgeAmount">Pledge $25 or more</div>
+        </div>
+        <div class="pledgeText">
           <p style="color: #848484;">
-            <span class="StatusBigText BambooStand">101</span>
-            left
+            You get an ergonomic stand made of natural bamboo.
+            You've helped us launch our promotional campaign, and
+            you’ll be added to a special Backer member list.
           </p>
         </div>
-        <div class="rewardBox"><p>Select Reward</p></div>
-      </div>
-    </div>
-    <!--Pledge Section $75+-->
-    <div class="content-section3" id="pledges">
-      <div class="pledgeHeader">
-        <div class="pledgeName select-reward">Black Edition Stand</div>
-        <div class="pledgeAmount">Pledge $75 or more</div>
-      </div>
-      <div class="pledgeText">
-        <p style="color: #848484;">
-          You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
-  member list. Shipping is included.
-        </p>
-      </div>
-      <div class="pledgeFooter">
         <div class="pledgeFooter">
+          <div class="pledgeFooter">
+            <p style="color: #848484;">
+              <span class="StatusBigText BambooStand">101</span>
+              left
+            </p>
+          </div>
+          <div class="rewardBox"><p>Select Reward</p></div>
+        </div>
+      </div>
+      <!--Pledge Section $75+-->
+      <div class="content-section3" id="blur">
+        <div class="pledgeHeader">
+          <div class="pledgeName select-reward">Black Edition Stand</div>
+          <div class="pledgeAmount">Pledge $75 or more</div>
+        </div>
+        <div class="pledgeText">
           <p style="color: #848484;">
-            <span class="StatusBigText BambooStand">64</span>
-            left
+            You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+    member list. Shipping is included.
           </p>
         </div>
-        <div class="rewardBox"><p>Select Reward</p></div>
+        <div class="pledgeFooter" >
+          <div class="pledgeFooter">
+            <p style="color: #848484;">
+              <span class="StatusBigText BambooStand">64</span>
+              left
+            </p>
+          </div>
+          <div class="rewardBox"><p>Select Reward</p></div>
+        </div>
       </div>
-    </div>
-    <!--Pledge Section $200+-->
-    <div class="content-section3" id="pledges" style="opacity: 0.3;">
-      <div class="pledgeHeader" >
-        <div class="pledgeName select-reward" >Mahogany Special Edition</div>
-        <div class="pledgeAmount" >Pledge $200 or more</div>
-      </div>
-      <div class="pledgeText">
-        <p style="color: #848484;">
-          You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
-  to our Backer member list. Shipping is included.
-        </p>
-      </div>
-      <div class="pledgeFooter" >
-        <div class="pledgeFooter">
+      <!--Pledge Section $200+-->
+      <div class="content-section3" id="blur" style="opacity: 0.3;">
+        <div class="pledgeHeader" >
+          <div class="pledgeName select-reward" >Mahogany Special Edition</div>
+          <div class="pledgeAmount" >Pledge $200 or more</div>
+        </div>
+        <div class="pledgeText">
           <p style="color: #848484;">
-            <span class="StatusBigText BambooStand">0</span>
-            left
+            You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+    to our Backer member list. Shipping is included.
           </p>
         </div>
-        <div class="rewardBox" ><p>Out of Stock</p></div>
+        <div class="pledgeFooter" >
+          <div class="pledgeFooter">
+            <p style="color: #848484;">
+              <span class="StatusBigText BambooStand">0</span>
+              left
+            </p>
+          </div>
+          <div class="rewardBox" ><p>Out of Stock</p></div>
+        </div>
       </div>
-    </div>
+  </div>
   </div>
 
 
 
 <!-------------------------Test for modal--------------------->
-<div class="content-section2" id="project-details">
+<div class="popup" id="popup">
   <div class="projectHeader">
     <div class="headerDetails" id="header-details">
       <p>Back this project</p>

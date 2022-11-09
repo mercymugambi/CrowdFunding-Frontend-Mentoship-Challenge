@@ -71,15 +71,15 @@ li a{
 	padding: 1rem;
 	margin-bottom: 1.5rem;
 	border-radius: 0.5rem;
+    
 }
-
-
 .topIcon{
     display: flex;
     justify-content: center;
     z-index: 100;
     margin-top: -40px;
 }
+
 h1{
     text-align: center;
     color: black;
@@ -295,164 +295,42 @@ progress[value]::-moz-progress-bar {
     font-weight: 700;
 }
 /*------------modal----------------*/
-/* modal-styles */
-.Menu.hidden,
-.CloseMenu.hidden,
-.PledgeBoxForm.hidden {
-	display: none;
-}
-.Modal {
-	position: absolute;
-	z-index: 100;
-	background: white;
-	border-radius: 10px;
-	width: 85%;
-	max-width: 800px;
-	top: 10vh;
-	left: 50%;
-	transform: translate(-50%, 0);
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-	display: none;
-	overflow-y: initial;
-}
-.Modal.visible {
-	display: block;
-	animation: fade-slide-in 0.3s ease-out forwards;
-}
-@keyframes fade-slide-in {
-	0% {
-		transform: translate(-50%, -5rem);
-	}
-	100% {
-		transform: translate(-50%, 0);
-	}
-}
-@keyframes trans {
-	0% {
-		opacity: 0;
-		transform: translateY(-5rem);
-	}
-	20% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 100%;
-		transform: translateY(0);
-	}
-}
-#menu_modal div {
-	border-bottom: 1px solid #dbdbdb;
-	font-size: 1rem;
-	font-weight: bold;
-	color: black;
-	padding: 1.5rem;
-}
-#gratitude {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	padding-bottom: 2rem;
-}
-#gratitude div {
+.popup {
+    margin: 50%;
+    margin-top: -80%;
+    top: 0;
+    left: 50%;
+    max-width: 800px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #fafafa;
 	padding: 1rem;
-}
-#close_modal {
-	display: flex;
-	justify-content: space-between;
-	padding: 1rem 0;
-}
-#project_detail {
-	font-size: 16px;
-	height: 80vh;
-	overflow-y: auto;
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-}
-#project_detail::-webkit-scrollbar {
-	display: none;
-}
-.HeaderContainer {
-	display: flex;
-	flex-direction: column;
-}
-.PledgeBoxForm {
-	border-top: 1px solid #dbdbdb;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	padding: 2rem;
-	animation: trans 0.3s ease-in forwards;
-}
-.PledgeBoxModal {
-	border: 1px solid #dbdbdb;
-	border-radius: 0.5rem;
 	margin-bottom: 1.5rem;
+	border-radius: 0.5rem;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.1);
+    transition: transform 0.4s, top 0.4s;
+    height: 70%;
 }
-.PledgeBoxModal:hover {
-	border: 2px solid #39b5ab;
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
 }
-.PledgeModalTop {
-	padding: 2rem 2rem 0;
+.popup #paragraph{
+    color: #848484;
+    
+    margin-left: 4%;
+    font-size: 16px;
 }
-.PledgeFormBottom {
-	display: flex;
-	justify-content: space-between;
-	padding-top: 1.5rem;
+#blur.active{
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.4;
 }
-.PledgeInputBox {
-	border: 1px solid #dbdbdb;
-	padding: 1rem;
-	border-radius: 40px;
-	display: flex;
-	align-items: baseline;
-	width: 45%;
-	min-width: 100px;
-	max-width: 150px;
-	margin-right: 1rem;
-}
-.PledgeInputBox:hover {
-	border-color: #39b5ab;
-	cursor: pointer;
-}
-.PledgeInput {
-	border: none;
-	outline: none;
-	padding-left: 1rem;
-	color: black;
-	font-weight: 700;
-	font-size: 18px;
-	width: 5rem;
-}
-.PledgeFormText {
-	border-radius: 40px;
-	width: 50%;
-	min-width: 100px;
-	max-width: 180px;
-}
-.Borderline {
-	border: 2px solid #39b5ab;
-}
-button {
-	border: none;
-	border-radius: 40px;
-	background-color: #39b5ab;
-	color: #fff;
-	font-weight: 700;
-	width: 100%;
-	height: 100%;
-	font-size: 1rem;
-}
-.close-btn img:hover {
-	cursor: pointer;
-}
-.attribution {
-	font-size: 11px;
-	text-align: center;
-}
-.attribution a {
-	color: hsl(228, 45%, 44%);
-}
+
 }
 
 
